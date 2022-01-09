@@ -1,0 +1,252 @@
+h4 {
+  font-size: 0.8125rem;
+}
+
+small, p.small {
+  font-size: 0.6875rem;
+}
+
+p.large {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 23px;
+}
+
+p.small {
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.card {
+  height: 100%;
+  width: 100%;
+  padding: 21px 34px;
+  border-radius: 10px;
+}
+
+.card .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 22px;
+}
+
+.card .profile .image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.card .profile .name h4 {
+  margin-bottom: -3px;
+  font-weight: 500;
+}
+
+.card .profile .name small {
+  font-weight: 500;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #ecf2f8;
+  overflow-y: scroll;
+  position: relative;
+}
+
+main .main-container {
+  width: 90%;
+  max-width: 1114px;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+main .main-container .container {
+  width: 100%;
+  height: 578px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (50%)[2];
+      grid-template-rows: repeat(2, 50%);
+  grid-gap: 20px;
+      grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
+}
+
+@media (max-width: 964px) {
+  main .main-container .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[5];
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: "daniel" "jonathan" "jeanette" "patrick" "kira";
+  }
+}
+
+main .main-container .container .card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: daniel;
+  background: url(../images/bg-pattern-quotation.svg), #7541c8;
+  background-repeat: no-repeat;
+  background-position: 76% 0%;
+}
+
+main .main-container .container .card1 .profile .image {
+  border: 3px solid #9262df;
+}
+
+main .main-container .container .card1 .profile .name h4 {
+  color: white;
+}
+
+main .main-container .container .card1 .profile .name small {
+  color: white;
+  opacity: 50%;
+}
+
+main .main-container .container .card1 .statement p.large {
+  color: white;
+}
+
+main .main-container .container .card1 .statement p.small {
+  color: white;
+  opacity: 50%;
+}
+
+main .main-container .container .card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: jonathan;
+  background-color: #48556a;
+}
+
+main .main-container .container .card2 .name h4 {
+  color: white;
+}
+
+main .main-container .container .card2 .name small {
+  color: white;
+  opacity: 50%;
+}
+
+main .main-container .container .card2 .statement p.large {
+  color: white;
+}
+
+main .main-container .container .card2 .statement p.small {
+  color: white;
+  opacity: 50%;
+}
+
+main .main-container .container .card3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: kira;
+  background-color: white;
+  -webkit-box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+main .main-container .container .card3 .name h4 {
+  color: #48556a;
+}
+
+main .main-container .container .card3 .name small {
+  color: #48556a;
+  opacity: 50%;
+}
+
+main .main-container .container .card3 .statement p.large {
+  color: #48556a;
+}
+
+main .main-container .container .card3 .statement p.small {
+  color: #48556a;
+  opacity: 50%;
+}
+
+main .main-container .container .card4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: jeanette;
+  background-color: white;
+  -webkit-box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.2);
+}
+
+main .main-container .container .card4 .name h4 {
+  color: #48556a;
+}
+
+main .main-container .container .card4 .name small {
+  color: #48556a;
+  opacity: 50%;
+}
+
+main .main-container .container .card4 .statement p.large {
+  color: #48556a;
+}
+
+main .main-container .container .card4 .statement p.small {
+  color: #48556a;
+  opacity: 50%;
+}
+
+main .main-container .container .card5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: patrick;
+  background-color: #19212e;
+}
+
+main .main-container .container .card5 .profile .image {
+  border: 3px solid #9262df;
+}
+
+main .main-container .container .card5 .profile .name h4 {
+  color: white;
+}
+
+main .main-container .container .card5 .profile .name small {
+  color: white;
+  opacity: 50%;
+}
+
+main .main-container .container .card5 .statement p.large {
+  color: white;
+}
+
+main .main-container .container .card5 .statement p.small {
+  color: white;
+  opacity: 50%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+
+h4{
+    font-size: 0.8125rem; // 13px
+}
+small, p.small{
+    font-size: 0.6875rem; //11px
+}
+p.large{
+    font-size: 1rem; //20px
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+p.small{
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.card{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 21px 34px;
+    border-radius: 10px;
+    .profile{
+        display: flex;
+        align-items: center;
+        margin-bottom: 22px;
+
+        .image{
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+         .name{
+             h4{
+                 margin-bottom: -3px;
+                 font-weight: 500;
+             }
+             small{
+                 font-weight: 500;
+             }
+         }
+
+    }
+}
+img{
+    width: 100%;
+    border-radius: 50%;
+}
